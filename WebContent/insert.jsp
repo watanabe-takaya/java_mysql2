@@ -2,12 +2,12 @@
 
 <html>
 <body>
-	<br> 検索条件を入力してください。
-	<br>（何も入力しないと全件抽出します）
-	<br>
-	<br>
 
-	<form action="/java_mysql/Search" method="POST">
+	<!-- -------------- -->
+	<br> 以下から登録できます。
+	<br>
+	<br>
+	<form action="/java_mysql/Edit" method="POST">
 
 		ID: <input type="text" name="id"> 名前: <input type="text"
 			name="name"> 性別：<SELECT NAME="sei">
@@ -21,11 +21,14 @@
 			<OPTION VALUE="2004">2004</OPTION>
 			<OPTION VALUE="2005">2005</OPTION>
 			<OPTION VALUE="2006">2006</OPTION>
-		</SELECT> <br> <br> <input type="submit" value="検索">
+		</SELECT> 住所: <input type="text" name="address"> <br> <br> <input
+			type="hidden" name="mode" value="add"> <input type="submit"
+			value="登録">
 	</form>
+
 	<br>
 	<br>
-		<a href="./insert.jsp">新規登録ページ</a>
+	<a href="./index.jsp">検索ページ</a>
 
 </body>
 </html>
